@@ -1,0 +1,28 @@
+{
+    "skills" : [
+        {
+            "name" : "Java",
+            "value" : 90
+        },
+        {
+            "name" : "Spring Boot",
+            "value" : 60
+        },
+        {
+            "name" : "AWS",
+            "value" : 55
+        },
+        {
+            "name" : "Python",
+            "value" : 80
+        },
+        {
+            "name" : "Unity XR",
+            "value" : 60
+        },
+        {
+            "name" : "Data Visualization",
+            "value" : 30
+        }
+    ]
+}

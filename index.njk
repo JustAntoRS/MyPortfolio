@@ -1,57 +1,33 @@
 ---
-layout: layouts/landing.njk
+layout: layouts/base.njk
 ---
 
+<section class="grid main-grid">
+  <img class="profile-picture" src="/photo_circle_crop.png" alt="My Profile Picture"/>
+  <div class="container">
+    <h2> Who am I? </h2>
+    <p> Hi there! I'm a Software Development Engineer based in Madrid, Spain, with 3 years of experience. I work at Amazon, where I get to tackle exciting new projects in the retail industry. </p>
+    <p> I'm especially passionate about web development and all things graphics-related, like developing video games, creating data visualizations, and building XR apps. </p>
+    <hgroup>
+      <h4>My Skills</h4>
+      <h6>Although I'm always learning something new</h6>
+    </hgroup>
+    <section class="grid">
+      <div>
+        {% for i in range(0, 3) %}
+          <label> {{ skills.skills[i].name }} </label>
+          <progress value={{ skills.skills[i].value }} max="100"></progress>
+        {% endfor %}
+      </div>
+      <div>
+        {% for i in range(3, 6) %}
+          <label> {{ skills.skills[i].name }} </label>
+          <progress value={{ skills.skills[i].value }} max="100"></progress>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</section>
 <article>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p><p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
-  <p> This is a test </p>
+  <h2> My Last Project </h2>
 </article>

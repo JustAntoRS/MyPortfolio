@@ -22,10 +22,20 @@
     :root {
       --primary: #ad66e8;
       --primary-hover: #6682e8;
+      --spacing: 0.6rem;
+    }
+    .main-grid {
+      padding-right: var(--block-spacing-horizontal);
+      padding-left: var(--block-spacing-vertical);
+    }
+    .profile-picture {
+      max-height: 90%;
+      max-width: 90%;
+      margin: auto;
     }
   </style>
   {% include  "layouts/components/navbar.njk" %}
-  <div>
+  <main>
     {{content | safe}}
-  </div>
+  </main>
 </html>
