@@ -21,6 +21,9 @@
       --primary-hover: #6682e8;
       --spacing: 0.6rem;
     }
+    body>footer, body>header, body>main {
+      padding: var(--block-spacing-vertical)/2 0;
+    }
     .main-grid {
       padding-right: var(--block-spacing-horizontal);
       padding-left: var(--block-spacing-vertical);
@@ -37,4 +40,5 @@
   <main>
     {{content | safe}}
   </main>
+  {% include  "layouts/components/footer.njk" %}
 </html>
